@@ -13,11 +13,12 @@
 }
 
 /* dark 01 */
-.dark_1{
+.dark_1 {
     color: #424242;
 }
+
 /* dark 2 */
-.dark_2{
+.dark_2 {
     color: #727272;
 }
 
@@ -48,14 +49,16 @@ nav ul {
 nav ul li a {
     text-decoration: none;
 }
-nav h3{
+
+nav h3 {
     font-size: 2rem;
 }
-.nav_description{
+
+.nav_description {
     margin: 1rem 0;
 }
 
-.banner{
+.banner {
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -63,28 +66,29 @@ nav h3{
     gap: 1.5rem;
 }
 
-.nav_text_box{
+.nav_text_box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2.2rem;
 }
-.nav_text_box > div{
+
+.nav_text_box>div {
     text-align: center;
     width: 50%;
 }
 
-.img-box{
+.img-box {
 
     width: 90%;
     margin: auto;
 }
 
-.banner img{
+.banner img {
     width: 100%;
 }
 
-.shared_btn{
+.shared_btn {
     background-color: #FF900E;
     border-radius: 5%;
     padding: 1rem 1.7rem;
@@ -94,20 +98,100 @@ nav h3{
     font-weight: 500;
 }
 
+.our_features_section {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.our_features_section .our_featuers_img_div {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.our_features_text_div {
+    float: left;
+    width: 50%;
+}
+
+.our_features_text_div p {
+    margin: 1rem 0;
+}
+
+.our_featuers_img_div img {
+    width: 100%;
+}
+
+
 @media screen and (max-width:576px) {
 
-    header{
-        height: 95vh;
+    header {
+        height: 85vh;
     }
-    nav{
-        flex-direction: column;
 
+    .banner {
+        margin-top: 10px;
+        gap: .5rem;
+        flex-direction: column-reverse;
     }
-    nav{
+
+    .our_features_text_div p {
+        margin: .5rem 0;
+    }
+
+    nav,
+    .our_features_section {
+        flex-direction: column;
+    }
+
+    .our_features_text_div {
+        text-align: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav {
         gap: 1rem;
     }
-    .nav_text_box > div{
+
+    .our_featuers_img_div {
+        margin-top: 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nav_text_box>div {
         width: 80%;
     }
-    
+
+}
+
+@media screen and (min-width:577px) and (max-width: 992px) {
+
+    header {
+        height: 100vh;
+    }
+
+    .our_features_section {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .our_features_text_div {
+        width: 90%;
+        text-align: center;
+    }
+
+    .our_featuers_img_div {
+        margin-top: -70px;
+    }
 }
