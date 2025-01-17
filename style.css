@@ -274,14 +274,13 @@ footer span{
 }
 @media screen and (max-width:576px) {
     footer{
-        height: 40vh;
+        height: 30vh;
         background: linear-gradient(180deg,rgb(0, 0, 0),rgb(83, 55, 55));
         
     }
     footer p{
         text-align: center;
         width: 100%;
-        margin-top: -150px;
     }
     header {
         height: 90vh;
