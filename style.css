@@ -128,26 +128,112 @@ nav h3 {
     width: 100%;
 }
 
+.enjoy_and_loveSection {
+    width: 80%;
+
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.enjoy_and_loveSection h2 {
+    font-size: 30px;
+    padding-left: 1rem;
+    height: 10vh;
+    margin-bottom: .8rem;
+    border-left: 5px solid #FF900E;
+}
+
+.card_container {
+
+    width: 85%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+
+.ten_year_btn {
+    display: flex;
+    padding: 1.6rem 1.8rem;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+    margin-top: -90px;
+    margin-left: -70px;
+}
+
+.ten_year_btn h4 {
+    font: 2.9rem;
+}
+
+.ten_year_btn h1 {
+    font-size: 2.9rem;
+}
+
+.enjoy_card {
+    padding: 2.2rem 2.7rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 30px 0 #edecec;
+}
+
+.enjoy_img_div {
+    width: 90%;
+}
+
+.enjoy_and_loveSection img {
+    width: 100%;
+    z-index: 1;
+}
 
 @media screen and (max-width:576px) {
 
     header {
-        height: 85vh;
+        height: 90vh;
     }
 
     .banner {
-        margin-top: 10px;
-        gap: .5rem;
+        margin-top: 9px;
+        gap: 0;
         flex-direction: column-reverse;
+    }
+
+    .enjoy_img_div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ten_year_btn {
+        margin-top: 10px;
+        margin-left: 20px;
     }
 
     .our_features_text_div p {
         margin: .5rem 0;
     }
 
+    .card_container {
+        width: 100%;
+        margin: auto;
+        margin-top: .3rem;
+
+    }
+
+    .enjoy_card {
+        padding: 1.1rem;
+    }
+
     nav,
-    .our_features_section {
+    .our_features_section,
+    .enjoy_and_loveSection {
         flex-direction: column;
+    }
+
+    .enjoy_text_div p {
+        margin: 1rem 0;
     }
 
     .our_features_text_div {
@@ -162,6 +248,11 @@ nav h3 {
 
     nav {
         gap: 1rem;
+    }
+
+    .enjoy_and_loveSection {
+        text-align: center;
+        margin-top: 3.9rem;
     }
 
     .our_featuers_img_div {
