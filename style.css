@@ -230,12 +230,67 @@ nav h3 {
     margin: 1rem 0;
     font-size: 1.6rem;
 }
-@media screen and (max-width:576px) {
 
+.company_logo_section{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+    margin-top: 3.9rem;
+    margin-bottom: 2rem;
+}
+.company_logo_section p{
+    margin: 1rem 0;
+}
+.logo_div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2.9rem;
+    filter: grayscale(100%);
+}
+.logo_section_text_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo_div_outer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(0,0,0),rgb(35, 26, 26));
+}
+footer span{
+    color: crimson;
+}
+@media screen and (max-width:576px) {
+    footer{
+        height: 40vh;
+        background: linear-gradient(180deg,rgb(0, 0, 0),rgb(83, 55, 55));
+        
+    }
+    footer p{
+        text-align: center;
+        width: 100%;
+        margin-top: -150px;
+    }
     header {
         height: 90vh;
     }
-
+    .company_logo_section{
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
     .banner {
         margin-top: 9px;
         gap: 0;
@@ -285,7 +340,9 @@ nav h3 {
         width: 100%;
         margin-top: 1rem;
     }
-
+    .logo_div{
+        grid-template-columns: repeat(1,1fr);
+    }
     nav ul {
         text-align: center;
     }
