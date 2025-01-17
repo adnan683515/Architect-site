@@ -208,7 +208,10 @@ nav h3 {
 
     .ten_year_btn {
         margin-top: 10px;
-        margin-left: 20px;
+        margin-left: 2px;
+        width: 100%;
+        padding: 1rem 1rem;
+        
     }
 
     .our_features_text_div p {
